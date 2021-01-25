@@ -1,0 +1,43 @@
+import intrinsic
+export example
+
+fps 30
+resolution 720
+aspect wide
+
+color #fefefe as background
+color #0e0e0e as foreground
+
+animation swing
+    at 0
+    offsetY 0
+    at 1s
+    offsetY 0.1
+    at 2s
+    offsetY 0
+    at 3s
+    offsetY -0.1
+    at 4s
+    offsetY 0
+    loop immediately infinite
+    interpolation sine
+end
+
+transition fadein
+    at 0
+    opacity 0.0
+    at 2s
+    opacity 1.0
+    interpolation ease
+end
+
+scene example
+    text "Hello, world!" with swing
+end
+
+sequence
+    at 0
+    cue example with fadein
+    at 5s
+    cut
+end

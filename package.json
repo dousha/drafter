@@ -1,0 +1,16 @@
+{
+  "name": "@dousha99/drafter",
+  "version": "0.0.1",
+  "description": "Image sequence generator",
+  "main": "build/index.js",
+  "repository": "https://github.com/dousha/drafter.git",
+  "author": "dousha99 <lijiahao34@live.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "canvas": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22"
+  }
+}
