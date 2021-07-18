@@ -26,13 +26,13 @@ end
 transition fadein
     at 0
     opacity 0.0
-    at 2s
+    at 1s
     opacity 1.0
     interpolation ease
 end
 
 scene example
-    text "Hello, world!" with swing
+    text "Hello, world!" with swing delay 1s
 end
 
 sequence
